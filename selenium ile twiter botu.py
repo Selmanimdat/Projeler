@@ -43,29 +43,29 @@ browser.get("https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_va
 time.sleep(7)
 emailbutton=browser.find_element(By.XPATH,"//*[@id='layers']/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input")
 #giriş yapılacak mail
-emailbutton.send_keys("ahmetmehmet2229@gmail.com")
+emailbutton.send_keys("******************")
 time.sleep(7)
 emailbutton.send_keys(Keys.ENTER)
 time.sleep(7)
 #ihtimallere karşı try except yapısını kullanıyoruz
 try:
     sifre_alanı=browser.find_element(By.XPATH,"//*[@id='layers']/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input")
-    sifre_alanı.send_keys("a2229Myzl")
+    sifre_alanı.send_keys("**************")
     sifre_alanı.send_keys(Keys.ENTER)
 except:
     time.sleep(7)
     kullanıcı_adı=browser.find_element(By.XPATH,"//*[@id='layers']/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input")
-    kullanıcı_adı.send_keys("ahmetmehmet2229")
+    kullanıcı_adı.send_keys("****************")
     kullanıcı_adı.send_keys(Keys.ENTER)
     time.sleep(7)
     new_pasword_area=browser.find_element(By.XPATH,"//*[@id='layers']/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input")
-    new_pasword_area.send_keys("a2229Myzl")
+    new_pasword_area.send_keys("************")
     new_pasword_area.send_keys(Keys.ENTER)
     time.sleep(7)
 try:
     search_area=browser.find_element(By.XPATH,"//*[@id='react-root']/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div/label/div[2]/div/input")
     #aranacak kişinin hesap ismi
-    search_area.send_keys("elonmusk")
+    search_area.send_keys("*************")
     search_area.send_keys(Keys.ENTER)
     time.sleep(11)
     people_button=browser.find_element(By.XPATH,"//*[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[1]/div[1]/div[2]/nav/div/div[2]/div/div[3]/a/div")
